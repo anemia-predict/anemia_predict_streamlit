@@ -8,6 +8,11 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 # Title of the web app
 st.title("Anemia Prediction")
+#Input for user
+name = st.text_input("Name", "")
+age = st.text_input("Age", "")
+gender = st.selectbox("Gender", ["Male", "Female", "Other"])
+
 
 # Input fields for the features
 red_pixel = st.text_input("Red Pixel %", "")
